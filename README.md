@@ -1,5 +1,4 @@
 # Depth-Anything TensorRT in TouchDesigner
-<a href="https://discord.com/invite/wNW8xkEjrf"><img src="https://discord.com/api/guilds/838923088997122100/widget.png?style=shield" alt="Discord Shield"/></a>
 
 TouchDesigner implementation for Depth Anything and Depth Anything v2 with TensorRT monocular depth estimation. 
 
@@ -13,18 +12,19 @@ TouchDesigner implementation for Depth Anything and Depth Anything v2 with Tenso
 Tested with TouchDesigner 2023.11880 & Python 3.11
 
 #### Installation process:
-1. Install [Python 3.11](https://www.python.org/downloads/release/python-3118/)
-2. Install [CUDA Toolkit](https://developer.nvidia.com/cuda-11-8-0-download-archive) 11.8
-3. Download [TDDepthAnything](https://github.com/olegchomp/TDDepthAnything/archive/refs/heads/main.zip) repository
-4. Download [Depth-Anything model](https://huggingface.co/spaces/LiheYoung/Depth-Anything/tree/main/checkpoints) or [Depth-Anything v2 model](https://github.com/DepthAnything/Depth-Anything-V2?tab=readme-ov-file#pre-trained-models)
-5. Copy model to ```checkpoints``` folder
-6. Run ```install_accelerate.bat```
+1. Install [Python 3.11](https://www.python.org/downloads/release/python-3118/);
+2. Install [CUDA Toolkit](https://developer.nvidia.com/cuda-11-8-0-download-archive) 11.8;
+3. Install [GIT](https://git-scm.com/downloads);
+4. Clone [TDDepthAnything](https://github.com/forkni/TDDepthAnything.git) repository
+5. Download [Depth-Anything model](https://huggingface.co/spaces/LiheYoung/Depth-Anything/tree/main/checkpoints) or [Depth-Anything v2 model](https://github.com/DepthAnything/Depth-Anything-V2?tab=readme-ov-file#pre-trained-models)
+6. Run ```install_accelerate.bat```. When prompted to select version of Python, type in "3.11" and hit "Enter";
+7. When installation will be finished, copy model to ```checkpoints``` folder
 
 #### When prompted to accelerate models:
-7. Select model version (1 - Depth-Anything, 2 - Depth-Anything v2)
-8. Select model size (s - small, b - base, l - large, g - giant)
-9. Select width & height (default is 518x518)
-10. Wait for acceleration to finish
+1. Select model version (1 - Depth-Anything, 2 - Depth-Anything v2)
+2. Select model size (s - small, b - base, l - large, g - giant)
+3. Select width & height (default is 518x518)
+4. Wait for acceleration to finish
 
 #### TouchDesigner inference:
 1. Add TDDepthAnything.tox to project
@@ -35,4 +35,5 @@ Tested with TouchDesigner 2023.11880 & Python 3.11
 Based on the following projects:
 * [Depth-Anything](https://github.com/LiheYoung/Depth-Anything) - Unleashing the Power of Large-Scale Unlabeled Data.
 * [Depth-Anything TensorRT C++](https://github.com/spacewalk01/depth-anything-tensorrt) - Leveraging the TensorRT API for efficient real-time inference.
+* [TopArray](https://github.com/IntentDev/TopArray) - Interaction between Python/PyTorch tensor operations and TouchDesigner TOPs.
 
