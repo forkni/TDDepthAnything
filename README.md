@@ -12,7 +12,7 @@ TouchDesigner implementation for Depth Anything and Depth Anything v2 with Tenso
 Tested with TouchDesigner 2023.11880 & Python 3.11
 
 #### Installation process:
-1. Install [Python 3.11](https://www.python.org/downloads/release/python-3118/);
+1. Install [Python 3.11](https://www.python.org/downloads/release/python-3111/);
 2. Install [CUDA Toolkit](https://developer.nvidia.com/cuda-11-8-0-download-archive) 11.8;
 3. Install [GIT](https://git-scm.com/downloads);
 4. Clone [TDDepthAnything](https://github.com/forkni/TDDepthAnything.git) repository
